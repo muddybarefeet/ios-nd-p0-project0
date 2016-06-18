@@ -34,10 +34,10 @@ class QuizViewController: UIViewController, AVSpeechSynthesizerDelegate {
   
   @IBAction func flagButtonPressed(sender: UIButton) {
     
-    if sender.tag == correctButtonTag{
-        displayAlert("Correct",  messageText: "Good choice!")
-    }else{
-        displayAlert("Incorrect", messageText: "Nope. Try again!")
+    if sender.tag == correctButtonTag {
+        displayAlert("Correct", messageText: "Well Done You Guessed Right :)")
+    } else {
+        displayAlert("Incorrect", messageText: "Not Quite The Right Answer :(")
     }
     
   }
